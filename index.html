@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MB Soda Center - Premium Cold Drinks</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="nav-brand">
+                <i class="fas fa-bottle-water animated-icon"></i>
+                <h1 class="brand-title" style="letter-spacing: 2px;"><span>MB.</span>   <span>SODA</span> <span>CENTER</span> </h1>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" data-en="Home" data-mr="होम">Home</a></li>
+                <li><a href="#flavours" data-en="Flavours" data-mr="फ्लेवर्स">Flavours</a></li>
+                <li><a href="#order" data-en="Order" data-mr="ऑर्डर">Order</a></li>
+                <li><a href="#contact" data-en="Contact" data-mr="संपर्क">Contact</a></li>
+                <li class="language-toggle">
+                    <button id="lang-btn" class="lang-btn">
+                        <span class="lang-en">EN</span>
+                        <span class="lang-mr" style="display:none;">MR</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Animated Bubbles Background -->
+        <div class="bubbles-container">
+            <div class="bubble bubble-1"></div>
+            <div class="bubble bubble-2"></div>
+            <div class="bubble bubble-3"></div>
+            <div class="bubble bubble-4"></div>
+            <div class="bubble bubble-5"></div>
+            <div class="bubble bubble-6"></div>
+            <div class="bubble bubble-7"></div>
+            <div class="bubble bubble-8"></div>
+            <div class="bubble bubble-9"></div>
+            <div class="bubble bubble-10"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title" data-i18n="hero-title">QUALITY IS OUR IDENTITY</h1>
+            <h3 data-i18n="hero-subtitle-since">Since 2021</h3>
+            <p class="hero-subtitle" data-i18n="hero-description">Experience the ultimate refreshment with MB Soda Center's premium cold drinks</p>
+            <a href="#flavours" class="cta-button" data-i18n="explore-btn">Explore Flavours</a>
+        </div>
+        <div class="hero-animation">
+            <h1 class="animated-brand-name-bg">
+                <span class="brand-letter">M</span>
+                <span class="brand-letter">B</span>
+                <span class="brand-letter">.</span>
+                <span class="brand-letter">S</span>
+                <span class="brand-letter">O</span>
+                <span class="brand-letter">D</span>
+                <span class="brand-letter">A</span>
+                <span class="brand-letter">.</span>
+                <span class="brand-letter">C</span>
+                <span class="brand-letter">E</span>
+                <span class="brand-letter">N</span>
+                <span class="brand-letter">T</span>
+                <span class="brand-letter">E</span>
+                <span class="brand-letter">R</span>
+            </h1>
+            <div class="bottle-wrapper">
+                <!-- Flying Cap -->
+                <div class="bottle-cap-flying"></div>
+                
+                <!-- Fizz/Foam Explosion -->
+                <div class="fizz-container">
+                    <div class="fizz fizz-1"></div>
+                    <div class="fizz fizz-2"></div>
+                    <div class="fizz fizz-3"></div>
+                    <div class="fizz fizz-4"></div>
+                    <div class="fizz fizz-5"></div>
+                    <div class="fizz fizz-6"></div>
+                    <div class="fizz fizz-7"></div>
+                    <div class="fizz fizz-8"></div>
+                    <div class="fizz fizz-9"></div>
+                    <div class="fizz fizz-10"></div>
+                </div>
+                
+                <!-- Overflow Liquid Animation -->
+                <div class="overflow-liquid overflow-left"></div>
+                <div class="overflow-liquid overflow-center"></div>
+                <div class="overflow-liquid overflow-right"></div>
+                
+                <!-- Overflow Bubbles -->
+                <div class="overflow-bubble bubble-overflow-1"></div>
+                <div class="overflow-bubble bubble-overflow-2"></div>
+                <div class="overflow-bubble bubble-overflow-3"></div>
+                <div class="overflow-bubble bubble-overflow-4"></div>
+                <div class="overflow-bubble bubble-overflow-5"></div>
+                <div class="overflow-bubble bubble-overflow-6"></div>
+                <div class="overflow-bubble bubble-overflow-7"></div>
+                
+                <svg class="soda-bottle" viewBox="0 0 240 480" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <!-- Premium glass gradient -->
+                    <radialGradient id="premiumGlass" cx="35%" cy="25%">
+                        <stop offset="0%" style="stop-color:#E8F5FF;stop-opacity:0.9" />
+                        <stop offset="30%" style="stop-color:#B8E6D5;stop-opacity:0.7" />
+                        <stop offset="70%" style="stop-color:#2d8659;stop-opacity:0.5" />
+                        <stop offset="100%" style="stop-color:#0d4d2e;stop-opacity:0.8" />
+                    </radialGradient>
+                    
+                    <!-- Liquid gradient (orange soda) -->
+                    <linearGradient id="sodaLiquidPro" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FFA500;stop-opacity:0.95" />
+                        <stop offset="30%" style="stop-color:#FF8C00;stop-opacity:0.92" />
+                        <stop offset="70%" style="stop-color:#FF6B35;stop-opacity:0.88" />
+                        <stop offset="100%" style="stop-color:#E55100;stop-opacity:0.85" />
+                    </linearGradient>
+                    
+                    <!-- Golden marble gradient -->
+                    <radialGradient id="goldenMarble" cx="30%" cy="30%">
+                        <stop offset="0%" style="stop-color:#FFFACD;stop-opacity:1" />
+                        <stop offset="25%" style="stop-color:#FFD700;stop-opacity:1" />
+                        <stop offset="60%" style="stop-color:#FFA500;stop-opacity:0.95" />
+                        <stop offset="100%" style="stop-color:#8B6914;stop-opacity:0.9" />
+                    </radialGradient>
+                    
+                    <!-- Premium shine effect -->
+                    <linearGradient id="premiumShine" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.5" />
+                        <stop offset="50%" style="stop-color:#FFFFFF;stop-opacity:0.1" />
+                        <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0.3" />
+                    </linearGradient>
+
+                    <!-- Shadow filter -->
+                    <filter id="bottleShadow">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+                        <feOffset dx="0" dy="3" result="offsetblur"/>
+                        <feComponentTransfer>
+                            <feFuncA type="linear" slope="0.4"/>
+                        </feComponentTransfer>
+                        <feMerge>
+                            <feMergeNode/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                
+                <!-- Outer bottle glow -->
+                <ellipse cx="120" cy="240" rx="68" ry="120" fill="rgba(255, 107, 53, 0.08)" filter="url(#bottleShadow)" />
+                
+                <!-- Bottle cap (crown cap style) -->
+                <g class="bottle-cap">
+                    <ellipse cx="120" cy="20" rx="18" ry="6" fill="#444" />
+                    <path d="M 110 20 L 105 28 L 135 28 L 130 20 Z" fill="#555" />
+                    <circle cx="110" cy="25" r="1.5" fill="#333" />
+                    <circle cx="120" cy="25" r="1.5" fill="#333" />
+                    <circle cx="130" cy="25" r="1.5" fill="#333" />
+                    <ellipse cx="120" cy="28" rx="17" ry="4" fill="#666" stroke="#333" stroke-width="0.5" />
+                </g>
+                
+                <!-- Neck transition -->
+                <path d="M 95 30 Q 90 35 88 50 L 152 50 Q 150 35 145 30 Z" fill="url(#premiumGlass)" stroke="#1a5c3a" stroke-width="1.5" />
+                
+                <!-- Marble in bottle neck -->
+                <g class="marble-group" style="animation: marbleRattle 2s ease-in-out infinite;">
+                    <circle cx="120" cy="40" r="12" fill="url(#goldenMarble)" stroke="#8B6914" stroke-width="2" filter="url(#bottleShadow)" />
+                    <circle cx="116" cy="36" r="4" fill="#FFFACD" opacity="0.8" />
+                    <circle cx="122" cy="38" r="3" fill="#FFFF99" opacity="0.7" />
+                    <ellipse cx="120" cy="44" rx="3" ry="2" fill="rgba(255,255,255,0.4)" />
+                </g>
+                
+                <!-- Main bottle body - Premium curved -->
+                <path d="M 88 50 Q 78 70 76 120 Q 74 170 76 220 Q 77 280 80 340 Q 82 380 90 420 L 150 420 Q 158 380 160 340 Q 163 280 164 220 Q 166 170 164 120 Q 162 70 152 50 Z" 
+                      fill="url(#premiumGlass)" stroke="#0d4d2e" stroke-width="2" opacity="0.93" />
+                
+                <!-- Bottle bottom punt (base) -->
+                <ellipse cx="120" cy="420" rx="32" ry="12" fill="#0d3a1a" opacity="0.8" />
+                <ellipse cx="120" cy="418" rx="32" ry="10" fill="url(#premiumGlass)" opacity="0.7" />
+                <ellipse cx="120" cy="425" rx="30" ry="8" fill="#000" opacity="0.15" />
+                
+                <!-- Soda liquid fill -->
+                <path d="M 82 280 Q 80 300 80 340 Q 82 380 90 415 L 150 415 Q 158 380 160 340 Q 160 300 158 280 Z" 
+                      fill="url(#sodaLiquidPro)" opacity="0.88" />
+                
+                <!-- Liquid surface wave effect -->
+                <path d="M 82 280 Q 100 275 120 276 Q 140 275 158 280" stroke="rgba(255, 160, 80, 0.6)" stroke-width="2" fill="none" />
+                <ellipse cx="120" cy="280" rx="38" ry="5" fill="rgba(255, 180, 100, 0.4)" />
+                
+                <!-- Animated bubbles in liquid -->
+                <circle cx="85" cy="310" r="3" fill="rgba(255,255,255,0.4)" class="bubble-rise" />
+                <circle cx="120" cy="330" r="2.5" fill="rgba(255,255,255,0.35)" class="bubble-rise" style="animation-delay: 0.4s" />
+                <circle cx="95" cy="350" r="2" fill="rgba(255,255,255,0.3)" class="bubble-rise" style="animation-delay: 0.8s" />
+                <circle cx="145" cy="320" r="2.8" fill="rgba(255,255,255,0.32)" class="bubble-rise" style="animation-delay: 1.2s" />
+                <circle cx="110" cy="370" r="2.2" fill="rgba(255,255,255,0.3)" class="bubble-rise" style="animation-delay: 0.6s" />
+                <circle cx="130" cy="300" r="2.5" fill="rgba(255,255,255,0.33)" class="bubble-rise" style="animation-delay: 1.6s" />
+                <circle cx="88" cy="280" r="1.8" fill="rgba(255,255,255,0.28)" class="bubble-rise" style="animation-delay: 0.2s" />
+                <circle cx="150" cy="360" r="2.3" fill="rgba(255,255,255,0.31)" class="bubble-rise" style="animation-delay: 1.8s" />
+                
+                <!-- Carbonation foam at top -->
+                <circle cx="115" cy="275" r="2.5" fill="rgba(255,255,255,0.5)" opacity="0.8" />
+                <circle cx="125" cy="273" r="2" fill="rgba(255,255,255,0.45)" opacity="0.7" />
+                <circle cx="120" cy="268" r="1.8" fill="rgba(255,255,255,0.4)" opacity="0.6" />
+                <circle cx="110" cy="270" r="2.2" fill="rgba(255,255,255,0.42)" opacity="0.7" />
+                
+                <!-- Condensation droplets -->
+                <circle cx="75" cy="150" r="2.2" fill="rgba(200,255,220,0.7)" opacity="0.8" />
+                <circle cx="78" cy="240" r="1.8" fill="rgba(200,255,220,0.6)" opacity="0.7" />
+                <circle cx="82" cy="320" r="2" fill="rgba(200,255,220,0.65)" opacity="0.75" />
+                <circle cx="165" cy="180" r="1.6" fill="rgba(200,255,220,0.6)" opacity="0.7" />
+                <circle cx="162" cy="280" r="1.9" fill="rgba(200,255,220,0.55)" opacity="0.65" />
+                <circle cx="160" cy="360" r="1.7" fill="rgba(200,255,220,0.6)" opacity="0.7" />
+                
+                <!-- Primary glass shine (left side) -->
+                <ellipse cx="85" cy="160" rx="14" ry="100" fill="url(#premiumShine)" opacity="0.8" />
+                
+                <!-- Secondary shine (right side) -->
+                <ellipse cx="165" cy="220" rx="10" ry="80" fill="rgba(255,255,255,0.2)" opacity="0.6" />
+                
+                <!-- Top highlight near cap -->
+                <ellipse cx="120" cy="45" rx="22" ry="12" fill="rgba(255,255,255,0.3)" opacity="0.7" />
+                
+                <!-- Premium label -->
+                <g class="label-group">
+                    <rect x="85" y="160" width="70" height="120" rx="6" fill="#FFFFFF" stroke="#FF6B35" stroke-width="2" opacity="0.97" />
+                    <rect x="87" y="162" width="66" height="116" rx="5" fill="none" stroke="#FFB366" stroke-width="0.5" opacity="0.6" />
+                    
+                    <!-- Label content -->
+                    <text x="120" y="185" font-family="'Arial Black', sans-serif" font-size="13" font-weight="900" text-anchor="middle" fill="#FF6B35" letter-spacing="2">MB</text>
+                    <text x="120" y="205" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle" fill="#2d8659">SODA</text>
+                    <text x="120" y="222" font-family="'Segoe UI', Arial, sans-serif" font-size="9" text-anchor="middle" fill="#1a1a1a">CENTER</text>
+                    
+                    <line x1="95" y1="228" x2="145" y2="228" stroke="#FF6B35" stroke-width="1" />
+                    
+                    <text x="120" y="245" font-family="'Segoe UI', Arial, sans-serif" font-size="7" text-anchor="middle" fill="#666" font-style="italic">Premium Cold Drinks</text>
+                    
+                    <!-- Decorative badge -->
+                    <circle cx="95" cy="258" r="3" fill="#FF6B35" />
+                    <circle cx="145" cy="258" r="3" fill="#FF6B35" />
+                </g>
+            </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flavours Section -->
+    <section id="flavours" class="flavours">
+        <div class="container">
+            <h2 class="section-title" data-i18n="flavours-title">Our Delicious Flavours</h2>
+            <p class="section-subtitle" data-i18n="flavours-subtitle">Choose your favorite from our exclusive collection</p>
+            
+            <div class="flavours-grid">
+                <!-- Limbu Soda -->
+                <div class="flavour-card">
+                    <div class="flavour-price-tag">
+                        <span class="price">₹15</span>
+                    </div>
+                    <div class="flavour-icon limbu">
+                        <i class="fas fa-lemon"></i>
+                    </div>
+                    <h3 data-i18n="limbu-soda">Limbu Soda</h3>
+                    <p data-i18n="limbu-desc">Zesty lime with sparkling carbonation</p>
+                    <button class="add-btn" data-flavour="Limbu Soda" data-price="20" data-i18n="add-to-order">Add to Order</button>
+                </div>
+
+                <!-- Jira -->
+                <div class="flavour-card">
+                    <div class="flavour-price-tag">
+                        <span class="price">₹20</span>
+                    </div>
+                    <div class="flavour-icon jira">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 data-i18n="jira">Jira</h3>
+                    <p data-i18n="jira-desc">Refreshing herbal blend with authentic taste</p>
+                    <button class="add-btn" data-flavour="Jira" data-price="20" data-i18n="add-to-order">Add to Order</button>
+                </div>
+
+                <!-- Orange -->
+                <div class="flavour-card">
+                    <div class="flavour-price-tag">
+                        <span class="price">₹20</span>
+                    </div>
+                    <div class="flavour-icon orange">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <h3 data-i18n="orange">Orange</h3>
+                    <p data-i18n="orange-desc">Citrus burst of pure tangy sweetness</p>
+                    <button class="add-btn" data-flavour="Orange" data-price="20" data-i18n="add-to-order">Add to Order</button>
+                </div>
+
+                <!-- Pineapple -->
+                <div class="flavour-card">
+                    <div class="flavour-price-tag">
+                        <span class="price">₹20</span>
+                    </div>
+                    <div class="flavour-icon pineapple">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3 data-i18n="pineapple">Pineapple</h3>
+                    <p data-i18n="pineapple-desc">Tropical sweetness in every sip</p>
+                    <button class="add-btn" data-flavour="Pineapple" data-price="20" data-i18n="add-to-order">Add to Order</button>
+                </div>
+
+                <!-- Guava -->
+                <div class="flavour-card">
+                    <div class="flavour-price-tag">
+                        <span class="price">₹20</span>
+                    </div>
+                    <div class="flavour-icon guava">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3 data-i18n="guava">Guava</h3>
+                    <p data-i18n="guava-desc">Natural fruity goodness with distinctive taste</p>
+                    <button class="add-btn" data-flavour="Guava" data-price="20" data-i18n="add-to-order">Add to Order</button>
+                </div>
+
+                <!-- Pudina -->
+                <div class="flavour-card">
+                    <div class="flavour-price-tag">
+                        <span class="price">₹20</span>
+                        
+                    </div>
+                    <div class="flavour-icon pudina">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 data-i18n="pudina">Pudina</h3>
+                    <p data-i18n="pudina-desc">Cool minty freshness for ultimate refreshment</p>
+                    <button class="add-btn" data-flavour="Pudina" data-price="20" data-i18n="add-to-order">Add to Order</button>
+                </div>
+
+                <!-- Blueberry -->
+                <div class="flavour-card">
+                    <div class="flavour-price-tag">
+                        <span class="price">₹20</span>
+                    </div>
+                    <div class="flavour-icon blueberry">
+                        <i class="fas fa-berry"></i>
+                    </div>
+                    <h3 data-i18n="blueberry">Blueberry</h3>
+                    <p data-i18n="blueberry-desc">Rich berry flavor with smooth refreshment</p>
+                    <button class="add-btn" data-flavour="Blueberry" data-price="20" data-i18n="add-to-order">Add to Order</button>
+                </div>
+
+                <!-- Kalakhatta -->
+                <div class="flavour-card">
+                    <div class="flavour-price-tag">
+                        <span class="price">₹20</span>
+                    </div>
+                    <div class="flavour-icon kalakhatta">
+                        <i class="fas fa-grapes"></i>
+                    </div>
+                    <h3 data-i18n="kalakhatta">Kalakhatta</h3>
+                    <p data-i18n="kalakhatta-desc">Tangy dark berry blend with authentic taste</p>
+                    <button class="add-btn" data-flavour="Kalakhatta" data-price="20" data-i18n="add-to-order">Add to Order</button>
+                </div>
+
+                <!-- Fuljar Soda -->
+                <div class="flavour-card premium-card">
+                    <div class="special-label" data-i18n="special-label"> OUR SPECIAL</div>
+                    <div class="flavour-price-tag">
+                        <span class="price">₹20</span>
+                    </div>
+                    <div class="flavour-icon fuljar">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3 data-i18n="fuljar">⭐ Fuljar Soda</h3>
+                    <p data-i18n="fuljar-desc">Traditional effervescent drink with unique charm</p>
+                    <button class="add-btn" data-flavour="Fuljar Soda" data-price="20" data-i18n="add-to-order">Add to Order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="your-order">Your Order</h2>
+            
+            <div class="order-container">
+                <!-- Order Items -->
+                <div class="order-items">
+                    <div class="order-header">
+                        <h3 data-i18n="order-items">Order Items</h3>
+                        <button id="clear-order" class="clear-btn" data-i18n="clear-all">Clear All</button>
+                    </div>
+                    <div id="order-list" class="order-list">
+                        <p class="empty-order" data-i18n="no-items">No items added yet. Start by adding your favorite flavours!</p>
+                    </div>
+                    <div class="thank-you-bar" data-i18n="thank-you">Thank You for Your Order!</div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <h3 data-i18n="order-summary">Order Summary</h3>
+                    <div class="summary-items">
+                        <div class="summary-row">
+                            <span data-i18n="subtotal">Subtotal:</span>
+                            <span id="subtotal">₹0</span>
+                        </div>
+                        <div class="summary-row highlight">
+                            <span data-i18n="total">Total:</span>
+                            <span id="total">₹0</span>
+                        </div>
+                    </div>
+
+                    <!-- Customer Details -->
+                    <div class="customer-form">
+                        <h4 data-i18n="customer-details">Customer Details</h4>
+                        <input type="text" id="customer-name" data-i18n="full-name" placeholder="Full Name" required>
+                        <input type="tel" id="customer-phone" data-i18n="phone" placeholder="Phone Number" required>
+                        <textarea id="customer-address" data-i18n="delivery-address" placeholder="Delivery Address" rows="3" required></textarea>
+                        
+                        <div class="delivery-options">
+                            <label data-i18n="delivery-options">
+                                <input type="radio" name="delivery" value="pickup" checked> <span data-i18n="pickup">Pickup</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="delivery" value="delivery"> <span data-i18n="home-delivery">Home Delivery</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button id="place-order" class="order-btn" data-i18n="place-order">Place Order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title" data-i18n="why-choose">Why Choose MB Soda Center?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-star"></i>
+                    <h4 data-i18n="premium-quality">Premium Quality</h4>
+                    <p data-i18n="quality-desc">Crafted with the finest ingredients for exceptional taste</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-leaf"></i>
+                    <h4 data-i18n="natural-flavours">Natural Flavours</h4>
+                    <p data-i18n="natural-desc">100% natural flavour extracts without artificial additives</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h4 data-i18n="fast-delivery">Fast Delivery</h4>
+                    <p data-i18n="delivery-desc">Quick and reliable delivery to your doorstep</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-handshake"></i>
+                    <h4 data-i18n="customer-care">Customer Care</h4>
+                    <p data-i18n="care-desc">24/7 support for all your queries and concerns</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About MB Soda Center Section -->
+    <section class="about-company">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about-title">About MB Soda Center</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-i18n="about-para1">MB Soda Center is a premium cold drink brand dedicated to delivering exceptional refreshment experiences. Since our establishment in 2021, we have been committed to crafting unique flavours that delight our customers.</p>
+                    <p data-i18n="about-para2">Our mission is to provide the finest quality sodas using natural ingredients and traditional recipes. Each bottle is crafted with care and precision to ensure superior taste and quality in every sip.</p>
+                    <p data-i18n="about-para3">We believe in innovation, quality, and customer satisfaction. Our dedicated team works tirelessly to bring you the most refreshing and delicious soda experience possible.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3 data-i18n="stat-flavours">9+ Flavours</h3>
+                        <p data-i18n="stat-flavours-desc">Unique taste variations</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 data-i18n="stat-customers">5000+ Happy Customers</h3>
+                        <p data-i18n="stat-customers-desc">Trusted by many</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 data-i18n="stat-years">Since 2021</h3>
+                        <p data-i18n="stat-years-desc">Years of excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="get-in-touch">Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4 data-i18n="location">Location</h4>
+                    <p data-i18n="location-text">MB Soda Center<br>Kathmandu, Nepal</p>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-phone"></i>
+                    <h4 data-i18n="phone-heading">Phone</h4>
+                    <p data-i18n="phone-text">+977 1 XXXX XXXX<br>+977 98XXXXX XXX</p>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-clock"></i>
+                    <h4 data-i18n="hours">Hours</h4>
+                    <p data-i18n="hours-text">Mon - Sun: 8:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-i18n="footer-title">MB Soda Center</h4>
+                    <p data-i18n="footer-desc">Your destination for premium, refreshing cold drinks</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="quick-links">Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" data-i18n="nav-home">Home</a></li>
+                        <li><a href="#flavours" data-i18n="nav-flavours">Flavours</a></li>
+                        <li><a href="#order" data-i18n="nav-order">Order</a></li>
+                        <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="follow-us">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="copyright">&copy; 2025 MB Soda Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Thank You Popup Modal -->
+    <div id="thank-you-modal" class="thank-you-modal">
+        <div class="thank-you-content">
+            <button class="thank-you-close" onclick="closeThankYouModal()">&times;</button>
+            <div class="thank-you-body">
+                <div class="thank-you-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2 data-i18n="thank-you-title">THANK YOU!</h2>
+                <p data-i18n="thank-you-message">Your order has been placed successfully</p>
+                <div class="order-confirmation-details" id="thank-you-details"></div>
+                <button class="thank-you-btn" onclick="closeThankYouModal()" data-i18n="continue-shopping">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Confirmation Modal -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn">&times;</button>
+            <div class="modal-body">
+                <i class="fas fa-check-circle"></i>
+                <h2 data-i18n="order-success">Order Placed Successfully!</h2>
+                <p id="order-details"></p>
+                <button class="modal-btn" onclick="location.reload()" data-i18n="continue-shopping">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
